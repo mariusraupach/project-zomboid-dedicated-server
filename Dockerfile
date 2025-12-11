@@ -1,7 +1,7 @@
 FROM cm2network/steamcmd:latest
 
 RUN mkdir -p "/home/steam/Steam/steamapps/common/Project Zomboid Dedicated Server" && \
-    chown -R steam:steam /home/steam/Steam
+    mkdir -p "/home/steam/Zomboid"
 
 COPY --chown=steam:steam --chmod=755 entrypoint.sh /entrypoint.sh
 
