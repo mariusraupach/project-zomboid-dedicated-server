@@ -1,0 +1,9 @@
+services:
+  project-zomboid-dedicated-server:
+    env_file:
+      - .env
+    image: mariusraupach/project-zomboid-dedicated-server:latest
+    ports:
+      - 16261:16261/udp
+      - 16262:16262/udp
+    restart: unless-stopped
