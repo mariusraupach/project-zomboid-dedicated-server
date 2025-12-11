@@ -24,4 +24,6 @@ if [[ -n "${SERVERNAME}" ]]; then
     args+=("-servername" "${SERVERNAME}")
 fi
 
-exec "$INSTALL_DIR/start-server.sh" "${args[@]}" "$@"
+cd "$INSTALL_DIR"
+
+exec "start-server.sh" "${args[@]}" "$@"
