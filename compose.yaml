@@ -9,6 +9,8 @@ services:
     restart: unless-stopped
     volumes:
       - "project-zomboid-dedicated-server:/home/steam/Steam/steamapps/common/Project Zomboid Dedicated Server"
+      - "zomboid:/home/steam/Zomboid"
 
 volumes:
   project-zomboid-dedicated-server:
+  zomboid:
