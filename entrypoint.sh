@@ -26,4 +26,4 @@ fi
 
 cd "$INSTALL_DIR"
 
-exec "start-server.sh" "${args[@]}" "$@"
+exec "bash start-server.sh" "${args[@]}" "$@"
